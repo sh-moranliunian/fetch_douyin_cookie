@@ -1,0 +1,2 @@
+# fetch_douyin_cookie
+ 基于Python实现的通过爬虫方式获取抖音授权登录的cookie的代码
