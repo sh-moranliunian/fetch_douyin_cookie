@@ -113,10 +113,6 @@ def doCheckQrCode(trace_id, token, lastest_cookie, headers, cookie_file_name):
         "biz_trace_id": trace_id
     }
 
-    x_bogus = XBogusUtil.generate_params_with_xbs(request_params, headers['User-Agent'])
-
-    request_params['X-Bogus'] = x_bogus
-
     response = session.get(request_url, params=request_params, headers=headers)
     response_text = response.text
     print(f"doCheckQrCode response: {response_text}")
